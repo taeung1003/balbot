@@ -62,8 +62,6 @@ async function dm() {
 }
 dm();
 
-async function mal() {
-
 if (message.content.toLocaleLowerCase().startsWith("!소개"))
 {
     var voiceChannel = message.member.voiceChannel;
@@ -389,7 +387,4 @@ if (message.content.toLocaleLowerCase().startsWith("!안대"))
             }
 
 }
-}
-mal();
-
 });
