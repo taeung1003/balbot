@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 
 const { Client,RichEmbed} = require("discord.js");
-client.login (process.env.BOT_TOKEN);
+client.login ("NjY1ODUwNDI5NjE5NTY4NjQ3.XjPswQ.RE00iqmjYxkHM6S8iU4QsnuMAFY");
 
 
 const ytdl = require('ytdl-core');
@@ -62,7 +62,8 @@ async function dm() {
 }
 dm();
 
-    async function mal() {
+async function mal() {
+
 if (message.content.toLocaleLowerCase().startsWith("!소개"))
 {
     var voiceChannel = message.member.voiceChannel;
@@ -386,8 +387,9 @@ if (message.content.toLocaleLowerCase().startsWith("!안대"))
                 message.reply("발젭이가 나갔을때 불러주시거나, 채널에 들어와주세요.")
                 return false;
             }
+
 }
-    }
-     mal();
+}
+mal();
 
 });
