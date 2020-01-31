@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 
 const { Client,RichEmbed} = require("discord.js");
-client.login ("NjY1ODUwNDI5NjE5NTY4NjQ3.XjPKOw.Llb2NpyfeLz1LIKHLW5Z9nycuJE");
+client.login (process.env.BOT_TOKEN);
 
 
 const ytdl = require('ytdl-core');
