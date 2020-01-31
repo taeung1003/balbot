@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 
 const { Client,RichEmbed} = require("discord.js");
-client.login ("NjY1ODUwNDI5NjE5NTY4NjQ3.XjPKOw.Llb2NpyfeLz1LIKHLW5Z9nycuJE");
+client.login (process.env.TOKEN);
 
 
 const ytdl = require('ytdl-core');
@@ -385,6 +385,6 @@ if (message.content.toLocaleLowerCase().startsWith("!안대"))
                 message.reply("발젭이가 나갔을때 불러주시거나, 채널에 들어와주세요.")
                 return false;
             }
-}
 
+}
 });
