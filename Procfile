@@ -1,1 +1,1 @@
-worker: node npm i ffmpeg-binaries
+worker: node index.js
