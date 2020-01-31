@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 
 const { Client,RichEmbed} = require("discord.js");
-client.login (process.eve.TOKEN);
+client.login (process.env.TOKEN);
 
 
 const ytdl = require('ytdl-core');
