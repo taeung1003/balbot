@@ -15,6 +15,7 @@
     "m3u8stream": "0.6.4",
     "opusscript": "0.0.7",
     "sax": "1.2.4",
+    "long": "4.0.0",
     "miniget": "^1.6.1",
     "snekfetch": "3.6.4",
     "async-limiter": "1.0.1", 
