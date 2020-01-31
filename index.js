@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 
 const { Client,RichEmbed} = require("discord.js");
-client.login ("NjY1ODUwNDI5NjE5NTY4NjQ3.XjPswQ.RE00iqmjYxkHM6S8iU4QsnuMAFY");
+client.login (process.eve.TOKEN);
 
 
 const ytdl = require('ytdl-core');
@@ -61,6 +61,8 @@ async function dm() {
     }
 }
 dm();
+
+async function mal() {
 
 if (message.content.toLocaleLowerCase().startsWith("!소개"))
 {
@@ -387,4 +389,7 @@ if (message.content.toLocaleLowerCase().startsWith("!안대"))
             }
 
 }
+}
+mal();
+
 });
