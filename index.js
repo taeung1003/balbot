@@ -10,7 +10,7 @@ const streamOptions = { seek: 0, volume: 1 };
 const PREFIX = "!";
 
 
-
+/*
 client.on("ready", () => {
     console.log("발젭 On");
     client.user.setActivity("발젭 | !명령어")
@@ -385,6 +385,6 @@ if (message.content.toLocaleLowerCase().startsWith("!안대"))
                 message.reply("발젭이가 나갔을때 불러주시거나, 채널에 들어와주세요.")
                 return false;
             }
-
+*/
 }
 });
