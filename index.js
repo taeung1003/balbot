@@ -24,43 +24,6 @@ let args = message.content.split(" ");
     let poll_args = message.content.substring(PREFIX.length).split(" ");
 
   
-async function dm() {
-    const Embed = new RichEmbed()
-    if (message.content.toLocaleLowerCase().startsWith("!명령어")) {
-        await message.author.send('').catch(error => {
-            if (error.message === "Cannot send messages to this user") {
-                message.reply("사용자 설정 => 개인정보 보호 및 보호 => 서버 멤버가 보내는 개인 메시지 허용하기에 체크해주세요.")
-            }
-            else {
-                const Embed = {
-                    color: 0xAB0000,
-                    title: "발젭 봇 명령어",
-                    image: {
-                        url: 'attachment://dm.jpg'
-                    },
-                    fields: [
-                        {
-                            name: "기본 명령어",
-                            value: "!소개 !힙합 !와썹 !싸가지 !난최강 !안대 !응애 \n !ㄴㄷㅆ !ㅌㅊㅇ !ㅈㄱㅊㅇ !ㅁㄷㅊㅇ !ㅇㄷㅊㅇ !ㅅㅍㅊㅇ ",
-                        },   
-                        
-                        {
-                            name: "발젭 봇 피드백",
-                            value: "오류 피드백 및 원하시는 음성 명령어를 추가하시고 싶으시면\n발젭봇 피드백 디스코드 방을 와주세요.\nhttps://discord.gg/SbDwcf",
-                        },
-                    ]                 
-                }
-                try {
-                if (!poll_args[1]){
-                    message.reply("명령어를 DM으로 보내드렸습니다. :slight_smile:");     
-                    message.author.send({embed: Embed});
-                }}
-                catch{}
-            }       
-        })
-    }
-}
-dm();
 
 if (message.content.toLocaleLowerCase().startsWith("!소개"))
 {
